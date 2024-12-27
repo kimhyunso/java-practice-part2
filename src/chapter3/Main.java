@@ -2,6 +2,9 @@ package chapter3;
 
 class MyString {
     private byte[] string;
+    public MyString() {
+
+    }
 
     public MyString(String word) {
         this.string = word.getBytes();
@@ -12,7 +15,7 @@ class MyString {
     }
 
     public void deepCopy(MyString rhs) {
-        rhs.string = this.string;
+        rhs = new MyString();
     }
 
     public void setString(String string) {
