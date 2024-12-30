@@ -15,7 +15,7 @@ class MyString {
     }
 
     public void deepCopy(MyString rhs) {
-        rhs = new MyString();
+        this.string = rhs.string.clone();
     }
 
     public void setString(String string) {
