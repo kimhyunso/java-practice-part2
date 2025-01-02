@@ -13,6 +13,12 @@ public class Main {
             shape = new Rectangle();
         else
             shape = new Triangle();
+
         shape.render();
+        // RTTI (RUN TIME TYPE INFORMATION)
+        if (shape instanceof Rectangle)
+            System.out.println("Rectangle class object");
+        else
+            System.out.println("Triangle class object");
     }
 }
