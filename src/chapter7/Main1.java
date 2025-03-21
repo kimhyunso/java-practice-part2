@@ -26,8 +26,6 @@ class MyString {
         return temp.compareTo(rhs.getString()) == 0;
     }
 }
-
-
 public class Main1 {
     public static void main(String[] args) {
         MyString s1 = new MyString();
